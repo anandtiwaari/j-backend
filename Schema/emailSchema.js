@@ -23,6 +23,11 @@ const emailSchema = new mongoose.Schema(
       enum: ["pending", "sent", "failed"],
       default: "pending",
     },
+    userId: {
+      type: String,
+      // required: true,
+    },
+    imageUrl: { type: String, default: null }, // Add this field
   },
   {
     timestamps: true,
